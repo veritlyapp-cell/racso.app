@@ -20,7 +20,7 @@ export default function Footer() {
                                 </a>
                             </li>
                             <li>
-                                <a href="/politica-de-privacidad.html" target="_blank" rel="noopener noreferrer">
+                                <a href="/terminos-y-condiciones.html" target="_blank" rel="noopener noreferrer">
                                     Términos y Condiciones
                                 </a>
                             </li>
