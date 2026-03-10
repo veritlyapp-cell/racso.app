@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad - Racso</title>
+    <style>
+        :root {
+            --bg-color: #0a0a0c;
+            --text-color: #e2e8f0;
+            --text-muted: #94a3b8;
+            --card-bg: rgba(255, 255, 255, 0.03);
+            --card-border: rgba(255, 255, 255, 0.08);
+            --neon-green: #00ff88;
+            --neon-violet: #8a2be2;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: var(--bg-color);
+        }
+
+        .container {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 16px;
+            border: 1px solid var(--card-border);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 2.5rem;
+            border-bottom: 1px solid var(--card-border);
+            padding-bottom: 15px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: var(--neon-green);
+            margin-top: 35px;
+            font-size: 1.5rem;
+        }
+
+        p,
+        li {
+            font-size: 1.05rem;
+            color: var(--text-color);
+        }
+
+        .last-update {
+            font-style: italic;
+            color: var(--text-muted);
+            margin-bottom: 30px;
+            font-size: 0.95rem;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        strong {
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        a {
+            color: var(--neon-violet);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--neon-green);
+        }
+
+        /* Glassmorphism accents */
+        body::before {
+            content: '';
+            position: fixed;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at 50% 50%, rgba(0, 255, 136, 0.03) 0%, transparent 50%);
+            z-index: -1;
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Política de Privacidad - Racso</h1>
+        <p class="last-update">Última actualización: 13 de febrero de 2026</p>
+
+        <p>En <strong>Racso</strong>, operada por <strong>Oscar Quevedo</strong>, valoramos tu privacidad. Esta política
+            describe cómo manejamos tu información personal para proveer servicios de coaching de empleabilidad mediante
+            inteligencia artificial.</p>
+
+        <h2>1. Información que Recopilamos</h2>
+        <p>Nuestra aplicación se basa en el procesamiento local para proteger tu privacidad:</p>
+        <ul>
+            <li><strong>Documentos (CV):</strong> Al cargar un PDF o Word, extraemos el texto para análisis. El archivo
+                y el texto se guardan <strong>exclusivamente en el almacenamiento local</strong> de tu dispositivo.</li>
+            <li><strong>Interacciones de Voz:</strong> Usamos el motor de voz de tu sistema operativo. No grabamos ni
+                almacenamos tus audios.</li>
+            <li><strong>Métricas:</strong> Google Firebase puede recopilar datos anónimos de uso para mejorar la
+                estabilidad de la app.</li>
+        </ul>
+
+        <h2>2. Uso de Inteligencia Artificial</h2>
+        <p>Utilizamos <strong>Google Gemini AI</strong> para el análisis. El texto de tu CV se envía de forma cifrada a
+            través de la API de Google para generar recomendaciones. Puedes consultar la <a
+                href="https://policies.google.com/privacy" target="_blank">Política de Privacidad de Google</a>.</p>
+
+        <h2>3. Almacenamiento y Seguridad</h2>
+        <p>No almacenamos copias de tus documentos en servidores propios. Toda la información personal permanece en tu
+            dispositivo y se elimina si borras los datos de la app o la desinstalas.</p>
+
+        <h2>4. Tus Derechos</h2>
+        <p>Tienes control total sobre tus datos. Puedes visualizar, editar o borrar tu historial y CV guardado desde el
+            menú de <strong>Ajustes</strong> dentro de la aplicación.</p>
+
+        <h2>5. Contacto</h2>
+        <p>Si tienes preguntas, contáctanos en: <strong>racso@relielabs.com</strong></p>
+    </div>
+</body>
+
+</html>
