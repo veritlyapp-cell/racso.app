@@ -24,8 +24,7 @@ export default function Navbar() {
                 </div>
 
                 <div className="navbar-actions desktop-only">
-                    <button className="button-secondary login-btn">Iniciar Sesión</button>
-                    <button className="button-primary">Probar Gratis</button>
+                    <button className="button-primary play-btn">Descargar en Google Play</button>
                 </div>
 
                 <button className="mobile-menu-btn" onClick={() => setIsOpen(!isOpen)}>
@@ -44,8 +43,7 @@ export default function Navbar() {
                     <a href="#premium" className="nav-link mobile-link" onClick={() => setIsOpen(false)}>Premium</a>
                     <a href="#testimonials" className="nav-link mobile-link" onClick={() => setIsOpen(false)}>Testimonios</a>
                     <div className="mobile-actions">
-                        <button className="button-secondary login-btn full-width">Iniciar Sesión</button>
-                        <button className="button-primary full-width">Probar Gratis</button>
+                        <button className="button-primary play-btn full-width">Descargar en Google Play</button>
                     </div>
                 </motion.div>
             )}

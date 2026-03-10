@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { PlayCircle, ShieldCheck, Sparkles, Star } from 'lucide-react';
+import { PlayCircle, Sparkles, Star } from 'lucide-react';
 import './Hero.css';
 
 import appMenu from '../assets/app_7.38.10_PM_2.jpeg';
@@ -18,7 +18,7 @@ export default function Hero() {
                         className="badge glass-panel"
                     >
                         <Sparkles size={16} className="badge-icon" />
-                        <span>Impulsado por Gemini 2.5 Flash/Pro</span>
+                        <span>Impulsado por Gemini</span>
                     </motion.div>
 
                     <motion.h1
@@ -48,9 +48,6 @@ export default function Hero() {
                         <button className="button-primary play-btn">
                             <PlayCircle size={24} />
                             Descargar en Google Play
-                        </button>
-                        <button className="button-secondary hero-secondary-btn">
-                            Ver Demo <ShieldCheck size={20} className="ml-2" />
                         </button>
                     </motion.div>
 

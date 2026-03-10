@@ -28,7 +28,7 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className="footer-bottom">
-                    <p>&copy; {new Date().getFullYear()} Racso.app operada por Oscar Quevedo. Todos los derechos reservados.</p>
+                    <p>&copy; {new Date().getFullYear()} Racso.app operada por Relié Labs. Todos los derechos reservados.</p>
                 </div>
             </div>
         </footer>
