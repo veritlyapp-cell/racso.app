@@ -353,10 +353,9 @@ export default function ConversationalForm({ onClose }: ConversationalFormProps)
                     <Phone size={18} className="input-icon" />
                     <input
                       type="tel"
-                      placeholder="Tu WhatsApp (ej: +51 987654321)"
+                      placeholder="Tu WhatsApp (Opcional, ej: +51 987654321)"
                       value={whatsapp}
                       onChange={(e) => setWhatsapp(e.target.value)}
-                      required
                       disabled={isSubmitting}
                     />
                   </div>
@@ -366,7 +365,7 @@ export default function ConversationalForm({ onClose }: ConversationalFormProps)
                   <button
                     type="submit"
                     className="button-primary submit-btn"
-                    disabled={isSubmitting || !nombre.trim() || !email.trim() || !whatsapp.trim()}
+                    disabled={isSubmitting || !nombre.trim() || !email.trim()}
                   >
                     {isSubmitting ? (
                       <>
