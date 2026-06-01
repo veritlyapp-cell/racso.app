@@ -6,7 +6,7 @@ import './Navbar.css';
 
 import racsoLogo from '../assets/logo.png';
 
-export default function Navbar() {
+export default function Navbar({ onOpenSurvey }: { onOpenSurvey: () => void }) {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
@@ -24,7 +24,8 @@ export default function Navbar() {
                 </div>
 
                 <div className="navbar-actions desktop-only">
-                    <button className="button-primary play-btn">Descargar en Google Play</button>
+                    <button className="button-secondary" onClick={onOpenSurvey} style={{ padding: '0.6rem 1.2rem', fontSize: '0.9rem' }}>Unirse a la Beta</button>
+                    <button className="button-primary play-btn" style={{ padding: '0.6rem 1.2rem', fontSize: '0.9rem' }}>Descargar</button>
                 </div>
 
                 <button className="mobile-menu-btn" onClick={() => setIsOpen(!isOpen)}>
@@ -43,6 +44,7 @@ export default function Navbar() {
                     <a href="#premium" className="nav-link mobile-link" onClick={() => setIsOpen(false)}>Premium</a>
                     <a href="#testimonials" className="nav-link mobile-link" onClick={() => setIsOpen(false)}>Testimonios</a>
                     <div className="mobile-actions">
+                        <button className="button-secondary full-width" onClick={() => { setIsOpen(false); onOpenSurvey(); }}>Unirse a la Beta</button>
                         <button className="button-primary play-btn full-width">Descargar en Google Play</button>
                     </div>
                 </motion.div>
@@ -50,3 +52,4 @@ export default function Navbar() {
         </nav>
     );
 }
+

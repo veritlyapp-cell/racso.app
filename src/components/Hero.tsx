@@ -4,7 +4,7 @@ import './Hero.css';
 
 import appMenu from '../assets/app_7.38.10_PM_2.jpeg';
 
-export default function Hero() {
+export default function Hero({ onOpenSurvey }: { onOpenSurvey: () => void }) {
     return (
         <section className="hero-section">
             <div className="hero-container">
@@ -44,10 +44,14 @@ export default function Hero() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.3 }}
                         className="hero-actions"
+                        style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}
                     >
                         <button className="button-primary play-btn">
                             <PlayCircle size={24} />
                             Descargar en Google Play
+                        </button>
+                        <button className="button-secondary" onClick={onOpenSurvey} style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', height: '48px', padding: '0 2rem', borderRadius: '999px', fontSize: '1rem', fontWeight: 600 }}>
+                            Unirse a la Beta
                         </button>
                     </motion.div>
 
