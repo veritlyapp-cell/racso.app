@@ -130,7 +130,7 @@ export default function ConversationalForm({ onClose }: ConversationalFormProps)
       
       // Let's add a final friendly bot message
       setTimeout(() => {
-        sendBotMessage(`¡Estupendo, ${nombre}! Acabo de registrarte para la Beta y te he enviado la guía por correo. ¡Revisa tu bandeja de entrada (y la carpeta de spam por si acaso)! Nos vemos pronto.`);
+        sendBotMessage(`¡Estupendo, ${nombre}! Acabo de registrarte para la Beta. En las próximas horas recibirás la guía en tu correo electrónico. ¡Nos vemos pronto!`);
       }, 500);
 
     } catch (err) {
@@ -381,7 +381,7 @@ export default function ConversationalForm({ onClose }: ConversationalFormProps)
               >
                 <CheckCircle2 size={48} className="success-icon" />
                 <h4>¡Registro completado!</h4>
-                <p>Tu acceso beta y guía de CV han sido reservados.</p>
+                <p>Tu acceso beta ha sido reservado. En las próximas horas recibirás la guía en tu correo.</p>
                 {onClose && (
                   <button onClick={onClose} className="button-secondary return-btn">
                     Volver al sitio principal
