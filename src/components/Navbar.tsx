@@ -25,7 +25,7 @@ export default function Navbar({ onOpenSurvey }: { onOpenSurvey: () => void }) {
 
                 <div className="navbar-actions desktop-only">
                     <button className="button-secondary" onClick={onOpenSurvey} style={{ padding: '0.6rem 1.2rem', fontSize: '0.9rem' }}>Unirse a la Beta</button>
-                    <button className="button-primary play-btn" style={{ padding: '0.6rem 1.2rem', fontSize: '0.9rem' }}>Descargar</button>
+                    <button className="button-primary play-btn" onClick={() => alert('¡Muy pronto! Da clic en "Unirse a la Beta" para tener prioridad cuando esté habilitado.')} style={{ padding: '0.6rem 1.2rem', fontSize: '0.9rem' }}>Descargar</button>
                 </div>
 
                 <button className="mobile-menu-btn" onClick={() => setIsOpen(!isOpen)}>
@@ -45,7 +45,7 @@ export default function Navbar({ onOpenSurvey }: { onOpenSurvey: () => void }) {
                     <a href="#testimonials" className="nav-link mobile-link" onClick={() => setIsOpen(false)}>Testimonios</a>
                     <div className="mobile-actions">
                         <button className="button-secondary full-width" onClick={() => { setIsOpen(false); onOpenSurvey(); }}>Unirse a la Beta</button>
-                        <button className="button-primary play-btn full-width">Descargar en Google Play</button>
+                        <button className="button-primary play-btn full-width" onClick={() => { setIsOpen(false); alert('¡Muy pronto! Da clic en "Unirse a la Beta" para tener prioridad cuando esté habilitado.'); }}>Descargar en Google Play</button>
                     </div>
                 </motion.div>
             )}

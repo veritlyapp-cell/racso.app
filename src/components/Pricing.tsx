@@ -53,7 +53,7 @@ const features = [
     }
 ];
 
-export default function Pricing() {
+export default function Pricing({ onOpenSurvey }: { onOpenSurvey: () => void }) {
     return (
         <section id="premium" className="pricing-section">
             <div className="pricing-container">
@@ -86,7 +86,7 @@ export default function Pricing() {
                                     <div className="plan-header">
                                         <h3>🆓 Plan Base</h3>
                                         <p className="plan-price">Gratis</p>
-                                        <button className="button-secondary plan-btn">Empezar Gratis</button>
+                                        <button className="button-secondary plan-btn" onClick={onOpenSurvey}>Empezar Gratis</button>
                                     </div>
                                 </th>
                                 <th className="plan-column premium-plan">
@@ -94,7 +94,7 @@ export default function Pricing() {
                                         <div className="popular-badge"><Sparkles size={14} /> Más Popular</div>
                                         <h3>💎 Plan Premium</h3>
                                         <p className="plan-price text-gradient">S/. 19.90<span>/mes</span></p>
-                                        <button className="button-primary plan-btn">Obtener Premium</button>
+                                        <button className="button-primary plan-btn" onClick={onOpenSurvey}>Obtener Premium</button>
                                     </div>
                                 </th>
                             </tr>

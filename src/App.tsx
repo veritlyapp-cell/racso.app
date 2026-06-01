@@ -51,7 +51,7 @@ function App() {
       <main>
         <Hero onOpenSurvey={openSurvey} />
         <Features />
-        <Pricing />
+        <Pricing onOpenSurvey={openSurvey} />
       </main>
       <Footer />
     </div>

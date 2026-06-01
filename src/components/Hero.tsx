@@ -46,7 +46,7 @@ export default function Hero({ onOpenSurvey }: { onOpenSurvey: () => void }) {
                         className="hero-actions"
                         style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}
                     >
-                        <button className="button-primary play-btn">
+                        <button className="button-primary play-btn" onClick={() => alert('¡Muy pronto! Da clic en "Unirse a la Beta" para tener prioridad cuando esté habilitado.')}>
                             <PlayCircle size={24} />
                             Descargar en Google Play
                         </button>
