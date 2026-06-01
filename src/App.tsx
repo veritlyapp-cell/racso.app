@@ -3,7 +3,6 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Features from './components/Features';
-import Pricing from './components/Pricing';
 import Footer from './components/Footer';
 import ConversationalForm from './components/ConversationalForm';
 
@@ -51,7 +50,6 @@ function App() {
       <main>
         <Hero onOpenSurvey={openSurvey} />
         <Features />
-        <Pricing onOpenSurvey={openSurvey} />
       </main>
       <Footer />
     </div>
