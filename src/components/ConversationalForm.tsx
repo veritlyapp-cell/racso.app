@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { User, Mail, Send, CheckCircle2, ArrowLeft, Loader2 } from 'lucide-react';
+import { User, Mail, Send, CheckCircle2, ArrowLeft, Loader2, Phone } from 'lucide-react';
 import './ConversationalForm.css';
 
 interface Message {
@@ -26,6 +26,7 @@ export default function ConversationalForm({ onClose }: ConversationalFormProps)
   const [barrera, setBarrera] = useState<string>('');
   const [nombre, setNombre] = useState<string>('');
   const [email, setEmail] = useState<string>('');
+  const [whatsapp, setWhatsapp] = useState<string>('');
   
   // Submit state
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
@@ -118,6 +119,7 @@ export default function ConversationalForm({ onClose }: ConversationalFormProps)
         body: JSON.stringify({
           nombre,
           email,
+          whatsapp,
           vacantes,
           entrevistas,
           barrera
@@ -347,13 +349,24 @@ export default function ConversationalForm({ onClose }: ConversationalFormProps)
                       disabled={isSubmitting}
                     />
                   </div>
+                  <div className="input-group">
+                    <Phone size={18} className="input-icon" />
+                    <input
+                      type="tel"
+                      placeholder="Tu WhatsApp (ej: +51 987654321)"
+                      value={whatsapp}
+                      onChange={(e) => setWhatsapp(e.target.value)}
+                      required
+                      disabled={isSubmitting}
+                    />
+                  </div>
                   
                   {errorMsg && <p className="error-text">{errorMsg}</p>}
 
                   <button
                     type="submit"
                     className="button-primary submit-btn"
-                    disabled={isSubmitting || !nombre.trim() || !email.trim()}
+                    disabled={isSubmitting || !nombre.trim() || !email.trim() || !whatsapp.trim()}
                   >
                     {isSubmitting ? (
                       <>
