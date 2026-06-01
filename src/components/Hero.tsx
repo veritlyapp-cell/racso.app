@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { PlayCircle, Sparkles, Star } from 'lucide-react';
+import { PlayCircle, Sparkles } from 'lucide-react';
 import './Hero.css';
 
 import appMenu from '../assets/app_7.38.10_PM_2.jpeg';
@@ -36,7 +36,7 @@ export default function Hero({ onOpenSurvey }: { onOpenSurvey: () => void }) {
                         transition={{ duration: 0.5, delay: 0.2 }}
                         className="hero-subtitle"
                     >
-                        Potencia tu currículum, domina tus entrevistas con nuestro Simulador STAR y consigue el trabajo de tus sueños en tiempo récord.
+                        Potencia tu currículum, domina tus entrevistas con nuestro simulador con Inteligencia Artificial y consigue el empleo de tus sueños en tiempo récord.
                     </motion.p>
 
                     <motion.div
@@ -55,21 +55,7 @@ export default function Hero({ onOpenSurvey }: { onOpenSurvey: () => void }) {
                         </button>
                     </motion.div>
 
-                    <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ duration: 1, delay: 0.6 }}
-                        className="hero-trust"
-                    >
-                        <div className="stars">
-                            <Star fill="var(--neon-green)" color="var(--neon-green)" size={16} />
-                            <Star fill="var(--neon-green)" color="var(--neon-green)" size={16} />
-                            <Star fill="var(--neon-green)" color="var(--neon-green)" size={16} />
-                            <Star fill="var(--neon-green)" color="var(--neon-green)" size={16} />
-                            <Star fill="var(--neon-green)" color="var(--neon-green)" size={16} />
-                        </div>
-                        <p>Más de 10,000 profesionales ya mejoraron su perfil</p>
-                    </motion.div>
+
                 </div>
 
                 {/* Right Side Visual/3D or Glass App Mockup */}
