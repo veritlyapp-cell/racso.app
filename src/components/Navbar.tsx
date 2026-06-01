@@ -19,8 +19,6 @@ export default function Navbar({ onOpenSurvey }: { onOpenSurvey: () => void }) {
 
                 <div className="navbar-links desktop-only">
                     <a href="#features" className="nav-link">Pilares</a>
-                    <a href="#premium" className="nav-link">Premium</a>
-                    <a href="#testimonials" className="nav-link">Testimonios</a>
                 </div>
 
                 <div className="navbar-actions desktop-only">
@@ -41,8 +39,6 @@ export default function Navbar({ onOpenSurvey }: { onOpenSurvey: () => void }) {
                     className="mobile-menu glass-panel"
                 >
                     <a href="#features" className="nav-link mobile-link" onClick={() => setIsOpen(false)}>Pilares</a>
-                    <a href="#premium" className="nav-link mobile-link" onClick={() => setIsOpen(false)}>Premium</a>
-                    <a href="#testimonials" className="nav-link mobile-link" onClick={() => setIsOpen(false)}>Testimonios</a>
                     <div className="mobile-actions">
                         <button className="button-secondary full-width" onClick={() => { setIsOpen(false); onOpenSurvey(); }}>Unirse a la Beta</button>
                         <button className="button-primary play-btn full-width" onClick={() => { setIsOpen(false); alert('¡Muy pronto! Da clic en "Unirse a la Beta" para tener prioridad cuando esté habilitado.'); }}>Descargar en Google Play</button>
