@@ -42,7 +42,7 @@ export default function ConversationalForm({ onClose }: ConversationalFormProps)
   // Initial welcome message
   useEffect(() => {
     sendBotMessage(
-      'Hola, soy Racso. He ayudado a muchos profesionales a dejar de ser invisibles para los reclutadores. ¿Me cuentas un poco sobre tu situación actual?'
+      'Hola, soy Racso. He ayudado a muchos profesionales a dejar de ser invisibles para los reclutadores y conseguir entrevistas. Estoy seleccionando un grupo exclusivo para probar la nueva app de Racso: tu coach de empleabilidad con IA que optimizará tus postulaciones y multiplicará tus oportunidades. ¿Me cuentas un poco sobre tu situación actual?'
     );
   }, []);
 
@@ -96,7 +96,7 @@ export default function ConversationalForm({ onClose }: ConversationalFormProps)
       sendBotMessage('Seamos honestos, ¿cuál sientes que es tu mayor barrera hoy?');
     } else if (nextStep === 4) {
       sendBotMessage(
-        'Gracias. He analizado tu perfil y tenemos una guía de "3 Acciones Inmediatas para que tu CV deje de ser invisible". Déjame tu nombre y correo para enviártela y darte acceso preferente a la Beta.'
+        'Gracias. Con base en tu perfil, la app de Racso te ayudará a optimizar tus postulaciones y a automatizar tu preparación de entrevistas. Déjame tu nombre y correo para reservar tu acceso preferente a la Beta y, como regalo de bienvenida, enviarte nuestra guía de "3 Acciones Inmediatas para que tu CV deje de ser invisible".'
       );
     }
   };
@@ -141,7 +141,8 @@ export default function ConversationalForm({ onClose }: ConversationalFormProps)
   };
 
   return (
-    <div className="survey-container">
+    <div className="survey-backdrop">
+      <div className="survey-container">
       {/* Top Navbar */}
       <header className="survey-header glass-panel">
         <div className="header-left">
@@ -391,6 +392,7 @@ export default function ConversationalForm({ onClose }: ConversationalFormProps)
           </AnimatePresence>
         </div>
       </footer>
+      </div>
     </div>
   );
 }
