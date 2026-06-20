@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de Usuario | Racso - Tu Coach de Empleabilidad</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            emerald: '#10b981',
+                            blue: '#3b82f6',
+                            dark: '#0f172a',
+                            card: '#1e293b'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .step-number {
+            background: linear-gradient(135deg, #3b82f6, #10b981);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .pro-tip {
+            background: linear-gradient(90deg, rgba(16, 185, 129, 0.1) 0%, rgba(16, 185, 129, 0) 100%);
+            border-left: 4px solid #10b981;
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 glass-card border-b border-white/10">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 rounded-full bg-gradient-to-tr from-brand-blue to-brand-emerald flex items-center justify-center">
+                        <i data-lucide="bot" class="w-5 h-5 text-white"></i>
+                    </div>
+                    <span class="font-bold text-xl tracking-tight">Racso</span>
+                </div>
+                <div>
+                    <a href="/" class="text-sm font-medium text-slate-300 hover:text-white transition-colors">Volver al Inicio</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="pt-32 pb-16 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto text-center">
+        <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight mb-4">
+            Guía de <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-brand-emerald">Inicio Rápido</span>
+        </h1>
+        <p class="text-lg text-slate-400 max-w-2xl mx-auto">
+            Bienvenido a Racso, tu coach de empleabilidad en el bolsillo impulsado por Inteligencia Artificial. Aprende a sacarle el máximo provecho en 5 sencillos pasos.
+        </p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-24 space-y-12">
+
+        <!-- Step 1 -->
+        <section class="glass-card rounded-2xl p-6 sm:p-8 relative overflow-hidden group hover:border-brand-blue/50 transition-colors">
+            <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                <i data-lucide="file-text" class="w-32 h-32"></i>
+            </div>
+            <div class="relative z-10">
+                <div class="flex items-center gap-4 mb-4">
+                    <span class="text-5xl font-black step-number">1</span>
+                    <div>
+                        <h2 class="text-2xl font-bold">Scanner CV</h2>
+                        <p class="text-brand-blue font-medium">Analiza tu Índice de Logros</p>
+                    </div>
+                </div>
+                <p class="text-slate-300 mb-6 leading-relaxed">
+                    Todo empieza aquí. Sube el PDF de tu Currículum Vitae. En segundos, Racso leerá tu experiencia, extraerá tus habilidades técnicas y blandas, y te generará un <strong>"Perfil de Poder"</strong>. 
+                    <br><br>Esto le permite a la Inteligencia Artificial conocerte a fondo para personalizar todo tu entrenamiento posterior.
+                </p>
+                <div class="pro-tip p-4 rounded-r-lg">
+                    <div class="flex gap-3">
+                        <i data-lucide="zap" class="w-5 h-5 text-brand-emerald shrink-0"></i>
+                        <p class="text-sm text-slate-300"><strong>Pro-Tip:</strong> Asegúrate de que tu CV esté en formato PDF de texto (no una imagen escaneada) para que el Scanner extraiga tus logros con 100% de precisión.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Step 2 -->
+        <section class="glass-card rounded-2xl p-6 sm:p-8 relative overflow-hidden group hover:border-purple-500/50 transition-colors">
+            <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                <i data-lucide="briefcase" class="w-32 h-32"></i>
+            </div>
+            <div class="relative z-10">
+                <div class="flex items-center gap-4 mb-4">
+                    <span class="text-5xl font-black step-number" style="background: linear-gradient(135deg, #a855f7, #3b82f6); -webkit-background-clip: text;">2</span>
+                    <div>
+                        <h2 class="text-2xl font-bold">Perfiles de Puesto</h2>
+                        <p class="text-purple-400 font-medium">Compatibilidad y Postulaciones</p>
+                    </div>
+                </div>
+                <p class="text-slate-300 mb-6 leading-relaxed">
+                    ¿Encontraste una oferta de trabajo en LinkedIn? Pega el texto (o sube una captura) aquí. Racso comparará esa vacante contra tu CV escaneado y te dará un <strong>Porcentaje (%) de Match</strong>.
+                    <br><br>Sabrás exactamente qué fortalezas resaltar en esa entrevista y qué <strong>Palabras Clave (Keywords)</strong> te faltan en tu CV para superar los filtros automáticos (ATS) de los reclutadores. Además, aquí podrás llevar el seguimiento (CRM) de si estás en etapa de "Entrevista", "Seleccionado" o "Rechazado".
+                </p>
+            </div>
+        </section>
+
+        <!-- Step 3 -->
+        <section class="glass-card rounded-2xl p-6 sm:p-8 relative overflow-hidden group hover:border-blue-500/50 transition-colors">
+            <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                <i data-lucide="message-square" class="w-32 h-32"></i>
+            </div>
+            <div class="relative z-10">
+                <div class="flex items-center gap-4 mb-4">
+                    <span class="text-5xl font-black step-number" style="background: linear-gradient(135deg, #3b82f6, #60a5fa); -webkit-background-clip: text;">3</span>
+                    <div>
+                        <h2 class="text-2xl font-bold">Coach STAR</h2>
+                        <p class="text-blue-400 font-medium">Simulador de Entrevista por Voz</p>
+                    </div>
+                </div>
+                <p class="text-slate-300 mb-6 leading-relaxed">
+                    Llegó la hora de entrenar duro. Racso actuará como tu entrevistador virtual. Te hará preguntas difíciles y situacionales (Técnica STAR: Situación, Tarea, Acción, Resultado) basadas en tu perfil.
+                    <br><br><strong>Responderás hablando directamente al micrófono de tu celular.</strong> Racso transcribirá tu respuesta y te dará un feedback inmediato: qué hiciste bien, si divagaste mucho, y cómo puedes estructurar mejor tu respuesta para sonar más ejecutivo.
+                </p>
+                <div class="pro-tip p-4 rounded-r-lg" style="border-left-color: #3b82f6; background: linear-gradient(90deg, rgba(59, 130, 246, 0.1) 0%, transparent 100%);">
+                    <div class="flex gap-3">
+                        <i data-lucide="mic" class="w-5 h-5 text-blue-400 shrink-0"></i>
+                        <p class="text-sm text-slate-300"><strong>Pro-Tip:</strong> No intentes memorizar. Usa el simulador en un lugar tranquilo y responde como si estuvieras frente al CEO de la empresa. Repite las preguntas hasta que obtengas un feedback excelente.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Step 4 -->
+        <section class="glass-card rounded-2xl p-6 sm:p-8 relative overflow-hidden group hover:border-red-500/50 transition-colors">
+            <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                <i data-lucide="calendar" class="w-32 h-32"></i>
+            </div>
+            <div class="relative z-10">
+                <div class="flex items-center gap-4 mb-4">
+                    <span class="text-5xl font-black step-number" style="background: linear-gradient(135deg, #ef4444, #f59e0b); -webkit-background-clip: text;">4</span>
+                    <div>
+                        <h2 class="text-2xl font-bold">Calendario</h2>
+                        <p class="text-red-400 font-medium">Agenda y Smart Alerts</p>
+                    </div>
+                </div>
+                <p class="text-slate-300 mb-6 leading-relaxed">
+                    Programa el día y la hora exactos de tus entrevistas reales. Racso se encargará de que no se te pase nada gracias a sus <strong>Notificaciones Inteligentes</strong>:
+                    <ul class="list-disc pl-5 mt-2 space-y-1 text-slate-300">
+                        <li><strong>1 hora antes:</strong> Recibirás un mensaje de ánimo y tips de apoyo.</li>
+                        <li><strong>1 hora después:</strong> Te recordará registrar en la app cómo te fue, qué falló y qué aprendiste (esto retroalimentará a la IA para tus futuros consejos).</li>
+                    </ul>
+                </p>
+            </div>
+        </section>
+
+        <!-- Step 5 -->
+        <section class="glass-card rounded-2xl p-6 sm:p-8 relative overflow-hidden group hover:border-amber-500/50 transition-colors">
+            <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                <i data-lucide="zap" class="w-32 h-32"></i>
+            </div>
+            <div class="relative z-10">
+                <div class="flex items-center gap-4 mb-4">
+                    <span class="text-5xl font-black step-number" style="background: linear-gradient(135deg, #f59e0b, #fbbf24); -webkit-background-clip: text;">5</span>
+                    <div>
+                        <h2 class="text-2xl font-bold">Día de Entrevista</h2>
+                        <p class="text-amber-400 font-medium">Pre-entrevista Flash</p>
+                    </div>
+                </div>
+                <p class="text-slate-300 mb-6 leading-relaxed">
+                    Faltan 10 minutos para entrar a la sala o unirte al Zoom. Abre este módulo para tu preparación final de emergencia:
+                    <br><br>
+                    <strong>1. Calibración de Nervios:</strong> Un ejercicio visual de respiración guiada (técnica 4-7-8) para bajar el cortisol y estabilizar tu ritmo cardíaco al instante.<br>
+                    <strong>2. Cápsulas de Poder:</strong> La IA generará 3 tips flash personalizados basados en tus debilidades y en los requisitos críticos de la vacante, para que entres con la mente afilada y segura.
+                </p>
+                <div class="pro-tip p-4 rounded-r-lg" style="border-left-color: #f59e0b; background: linear-gradient(90deg, rgba(245, 158, 11, 0.1) 0%, transparent 100%);">
+                    <div class="flex gap-3">
+                        <i data-lucide="star" class="w-5 h-5 text-amber-400 shrink-0"></i>
+                        <p class="text-sm text-slate-300"><strong>Pro-Tip:</strong> Esta función está pensada para ser leída en el pasillo o sala de espera. No hay textos largos, solo impacto visual directo a tu cerebro.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <div class="text-center pt-8">
+            <h3 class="text-2xl font-bold mb-4">¿Listo para conseguir tu trabajo ideal?</h3>
+            <p class="text-slate-400 mb-8">La preparación es la clave del éxito. Entrena hoy con Racso.</p>
+            <a href="/" class="inline-flex items-center gap-2 bg-gradient-to-r from-brand-emerald to-brand-blue hover:from-brand-blue hover:to-brand-emerald text-white font-bold py-4 px-8 rounded-full transition-all transform hover:scale-105 shadow-lg shadow-brand-blue/20">
+                <i data-lucide="smartphone" class="w-5 h-5"></i>
+                ABRIR LA APLICACIÓN
+            </a>
+        </div>
+
+    </main>
+
+    <footer class="border-t border-white/10 py-8 text-center text-slate-500 text-sm">
+        <p>&copy; 2026 Racso App. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Inicializar iconos de Lucide
+        lucide.createIcons();
+    </script>
+</body>
+</html>
